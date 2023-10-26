@@ -6,7 +6,7 @@ import { useAllJobsContext } from "../pages/AllJobs";
 
 const PageBtnContainer = () => {
   const { data } = useAllJobsContext();
-  const { numOfPages, currentPage } = data.data;
+  const { numOfPages, currentPage } = data;
   const pages = Array.from({ length: numOfPages }, (_, index) => index + 1);
 
   const { search, pathname } = useLocation();
